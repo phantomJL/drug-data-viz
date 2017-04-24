@@ -7,3 +7,5 @@ body {
 .visualization {background-color: #ddd; height: 100vh;}
 
 .filters {height: 100vh;}
+
+#chart {height:80%;}
