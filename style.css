@@ -4,8 +4,8 @@ body {
   padding-bottom: 20px;
 }
 
-.visualization {background-color: #ddd; height: 100vh;}
+.visualization {height: 100vh;}
 
-.filters {height: 100vh;}
+.filters {height: 100vh; background-color: #eee;}
 
 #chart {height:80%;}
