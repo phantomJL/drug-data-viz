@@ -6,9 +6,11 @@ var chart = c3.generate({
 	        x: {
 	            type: 'category' // this needed to load string x value
 	        }
-    	},
-
-    }
+    	}
+    },
+    padding: {
+	  right: 20
+	}
 });
 
 function changeData(dataToLoad){
@@ -33,18 +35,18 @@ function changeData(dataToLoad){
 	    case 'ethnicity':
 	    	setTimeout(function(){
 		        chart.load({
-		        	url: 'data/opioid-type.csv'
+		        	url: 'data/ethnicity.csv'
 		    	});
 	    	},1000);
 	    	$("#filter-dropdown").html('Ethnicity <span class="caret"></span>');
 	        break;
-	    case 'expected-source':
+	    case 'intent':
 	    	setTimeout(function(){
 		        chart.load({
-		        	url: 'data/total-deaths.csv'
+		        	url: 'data/intent.csv'
 		    	});
 	    	},1000);
-	    	$("#filter-dropdown").html('Expected Source of Payment <span class="caret"></span>');
+	    	$("#filter-dropdown").html('Intent <span class="caret"></span>');
 	        break;
 	    case 'opioid-type':
 	    	setTimeout(function(){
@@ -57,7 +59,7 @@ function changeData(dataToLoad){
 	    case 'sex':
 	    	setTimeout(function(){
 		        chart.load({
-		        	url: 'data/total-deaths.csv'
+		        	url: 'data/sex.csv'
 		    	});
 	    	},1000);
 	    	$("#filter-dropdown").html('Sex <span class="caret"></span>');
