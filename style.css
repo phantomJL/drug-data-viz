@@ -9,3 +9,4 @@ body {
 .filters {height: 100vh; background-color: #eee; padding-top: 2%;}
 
 #chart {height:80%;}
+#chart-title {text-align: center;}

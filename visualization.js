@@ -7,6 +7,7 @@ var chart = c3.generate({
 	            type: 'category' // this needed to load string x value
 	        }
     	},
+
     }
 });
 
@@ -14,45 +15,59 @@ function changeData(dataToLoad){
 	chart.unload();
 	switch(dataToLoad) {
 	    case 'total-deaths':
-	        chart.load({
-	        	url: 'data/total-deaths.csv'
-	    	});
+	        setTimeout(function(){
+		        chart.load({
+		        	url: 'data/total-deaths.csv'
+		    	});
+	    	},1000);
 	    	$("#filter-dropdown").html('All Deaths <span class="caret"></span>');
 	        break;
 	    case 'age':
-	     //    chart.load({
-	     //    	url: 'data/opioid-type.csv'
-	    	// });
+	    	setTimeout(function(){
+		        chart.load({
+		        	url: 'data/opioid-type.csv'
+		    	});
+	    	},1000);
 	    	$("#filter-dropdown").html('Age <span class="caret"></span>');
 	        break;
 	    case 'county':
-	     //    chart.load({
-	     //    	url: 'data/total-deaths.csv'
-	    	// });
+	    	setTimeout(function(){
+		        chart.load({
+		        	url: 'data/total-deaths.csv'
+		    	});
+	    	},1000);
 	    	$("#filter-dropdown").html('County <span class="caret"></span>');
 	        break;
 	    case 'ethnicity':
-	     //    chart.load({
-	     //    	url: 'data/opioid-type.csv'
-	    	// });
+	    	setTimeout(function(){
+		        chart.load({
+		        	url: 'data/opioid-type.csv'
+		    	});
+	    	},1000);
 	    	$("#filter-dropdown").html('Ethnicity <span class="caret"></span>');
 	        break;
 	    case 'expected-source':
-	     //    chart.load({
-	     //    	url: 'data/total-deaths.csv'
-	    	// });
+	    	setTimeout(function(){
+		        chart.load({
+		        	url: 'data/total-deaths.csv'
+		    	});
+	    	},1000);
 	    	$("#filter-dropdown").html('Expected Source of Payment <span class="caret"></span>');
 	        break;
 	    case 'opioid-type':
-	        chart.load({
-	        	url: 'data/opioid-type.csv'
-	    	});
+	    	setTimeout(function(){
+		        chart.load({
+		        	url: 'data/opioid-type.csv'
+		    	});
+	    	},1000);
 	    	$("#filter-dropdown").html('Opioid Type <span class="caret"></span>');
 	        break;
 	    case 'sex':
-	     //    chart.load({
-	     //    	url: 'data/total-deaths.csv'
-	    	// });
+	    	setTimeout(function(){
+		        chart.load({
+		        	url: 'data/total-deaths.csv'
+		    	});
+	    	},1000);
 	    	$("#filter-dropdown").html('Sex <span class="caret"></span>');
 	        break;
 	    default:
