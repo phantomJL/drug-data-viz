@@ -25,18 +25,10 @@ function changeData(dataToLoad){
 	    case 'age':
 	    	setTimeout(function(){
 		        chart.load({
-		        	url: 'data/opioid-type.csv'
+		        	url: 'data/age.csv'
 		    	});
 	    	},1000);
 	    	$("#filter-dropdown").html('Age <span class="caret"></span>');
-	        break;
-	    case 'county':
-	    	setTimeout(function(){
-		        chart.load({
-		        	url: 'data/total-deaths.csv'
-		    	});
-	    	},1000);
-	    	$("#filter-dropdown").html('County <span class="caret"></span>');
 	        break;
 	    case 'ethnicity':
 	    	setTimeout(function(){
