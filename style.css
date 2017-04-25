@@ -6,6 +6,6 @@ body {
 
 .visualization {height: 100vh;}
 
-.filters {height: 100vh; background-color: #eee;}
+.filters {height: 100vh; background-color: #eee; padding-top: 2%;}
 
 #chart {height:80%;}

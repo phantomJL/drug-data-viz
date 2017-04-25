@@ -47,7 +47,23 @@
           <h2>California Opioid Overdoses (2006-2013)</h2>
           <div id="chart"></div>
         </div>
-        <div class="col-md-3 filters">.filters</div>
+        <div class="col-md-3 filters">
+          <!-- Filter Dropdown -->
+          <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              All Deaths <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="#" onclick="changeData('total-deaths');">All Deaths</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#" onclick="changeData('opioid-type');">Opioid Type</a></li>
+              <li><a href="#">Ethnicity</a></li>
+              <li><a href="#">Age</a></li>
+              
+              
+            </ul>
+          </div>
+        </div>
       </div>
 
     </div><!-- /.container-fluid -->
