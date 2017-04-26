@@ -6,7 +6,8 @@ var chart = c3.generate({
 	        x: {
 	            type: 'category' // this needed to load string x value
 	        }
-    	}
+    	},
+    	type: 'area-spline'
     },
     padding: {
 	  right: 20
@@ -69,5 +70,28 @@ function changeData(dataToLoad){
 	        	url: 'data/total-deaths.csv'
 	    	});
 	} 
+
+}
+
+function changeChartType(newType) {
+	switch(newType) {
+	    case 'area-spline':
+			chart.transform('area-spline');
+			//change selected value to area-spline
+	    	//$("#filter-dropdown").html('All Deaths <span class="caret"></span>');
+	        break;
+	    case 'line':
+			chart.transform('line');
+			//change selected value to area-spline
+	    	//$("#filter-dropdown").html('Age <span class="caret"></span>');
+	        break;
+	    case 'bar':
+			chart.transform('bar');
+			//change selected value to area-spline
+	    	//$("#filter-dropdown").html('Age <span class="caret"></span>');
+	        break;    
+	    default:
+			    chart.transform('area-spline');
+	}
 
 }

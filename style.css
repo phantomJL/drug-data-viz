@@ -1,13 +1,16 @@
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
-  padding-top: 50px;
-  padding-bottom: 20px;
+  /*padding-top: 50px;
+  padding-bottom: 20px;*/
+  font-family: 'Raleway', sans-serif;
 }
-
-.visualization {height: 100vh;}
-
-.filters {height: 100vh; background-color: #eee; padding-top: 2%;}
-
+nav{background-color: #DEDEDE;}
+h2{font-family: 'Playfair Display', serif;}
+.visualization {padding-top: 2%; height: 100vh; background-color: #FFF;}
+.filters {height: 100vh; background-color: #eee; padding-top: 2%; font-family: 'Playfair Display', serif;}
+.filters button {box-shadow: 5px 5px 5px #999;}
+.chartTypeCards {margin-top: 10%; font-family: 'Playfair Display', serif;}
+.chartTypeCards div {box-shadow: 5px 5px 5px #999;background-color: #fff; padding: 2% 5%; margin: 5% 10%;}
 #chart {height:80%;}
 #filter-dropdown {}
 #chart-title {text-align: center;}
