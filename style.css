@@ -12,5 +12,6 @@ h2{font-family: 'Playfair Display', serif;}
 .chartTypeCards {margin-top: 10%; font-family: 'Playfair Display', serif;}
 .chartTypeCards div {box-shadow: 5px 5px 5px #999;background-color: #fff; padding: 2% 5%; margin: 5% 10%;}
 #chart {height:80%;}
+#chart .c3-legend-item {font-family: 'Raleway', sans-serif;}
 #filter-dropdown {}
 #chart-title {text-align: center;}

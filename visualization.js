@@ -78,20 +78,17 @@ function changeChartType(newType) {
 	    case 'area-spline':
 			chart.transform('area-spline');
 			//change selected value to area-spline
-	    	//$("#filter-dropdown").html('All Deaths <span class="caret"></span>');
 	        break;
 	    case 'line':
 			chart.transform('line');
 			//change selected value to area-spline
-	    	//$("#filter-dropdown").html('Age <span class="caret"></span>');
 	        break;
 	    case 'bar':
 			chart.transform('bar');
 			//change selected value to area-spline
-	    	//$("#filter-dropdown").html('Age <span class="caret"></span>');
 	        break;    
 	    default:
-			    chart.transform('area-spline');
+			chart.transform('area-spline');
 	}
 
 }
