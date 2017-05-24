@@ -67,59 +67,19 @@
   				</ul>
   			</div>
 		</section>
-      
-      	<section class="col-md-9">
+      	
+      	
+      	<section class="col-md-9 chart-section visualization">
+      		
 			<!--Left Section START-->
-			<section class="col-md-9 visualization">
+			<!--<section class="col-md-12 visualization chart-section">-->
 			  <h2 id="chart-title">California Opioid Overdoses (2006-2013)</h2>
-			  <div id="chart"></div>
-			</section>
+			  <section class="col-md-1" style="background-color: red; height: 300px; padding: 0 0 0 15px;">
+      		  </section>
+			  <div class="col-md-11" id="chart" style="padding-left:0;"></div>
+			<!--</section>-->
 			<!--Left Section END-->
-
-			<!--Right Section START-->
-			<section class="col-md-3 filters">
-
-			  <!-- Filter Dropdown START-->
-			  <div class="btn-group btn-block">
-				<button type="button" class="btn btn-default dropdown-toggle btn-block" id="filter-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				  All Deaths <span class="caret"></span>
-				</button>
-				<ul class="dropdown-menu btn-block">
-				  <li><a href="#" onclick="changeData('total-deaths');">All Deaths</a></li>
-				  <li role="separator" class="divider"></li>
-				  <li><a href="#" onclick="changeData('age');">Age</a></li>
-				  <li><a href="#" onclick="changeData('ethnicity');">Ethnicity</a></li>
-				  <li><a href="#" onclick="changeData('intent');">Intent</a></li>
-				  <li><a href="#" onclick="changeData('opioid-type');">Opioid type</a></li>
-				  <li><a href="#" onclick="changeData('sex');">Sex</a></li>
-				</ul>
-			  </div>
-			  <!-- Filter Dropdown END-->
-
-			  <!--Chart Type Buttons START-->
-			  <section class="chartTypeCards">
-				<a href="#" onclick="changeChartType('area-spline')";>
-				  <div>
-					<h4>Area</h4>
-					<img src="assets/area.png" style="width:100%;">
-				  </div>
-				</a>
-				<a href="#" onclick="changeChartType('bar')";>
-				  <div>
-					<h4>Bar</h4>
-					<img src="assets/bar.png" style="width:100%;">
-				  </div>
-				</a> 
-				<a href="#" onclick="changeChartType('line')";>
-				  <div>
-					<h4>Line</h4>
-					<img src="assets/line.png" style="width:100%;">
-				  </div>
-				</a>
-			  </section>
-			  <!--Chart Type Buttons END-->
-		 
-			</section><!-- /Right Section END-->
+			
 		</section>	
 			
       </div><!-- /.row -->

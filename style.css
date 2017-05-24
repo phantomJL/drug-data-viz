@@ -1,16 +1,68 @@
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
-  /*padding-top: 50px;
-  padding-bottom: 20px;*/
+  padding-top: 50px;
+  padding-bottom: 20px;
   font-family: 'Raleway', sans-serif;
 }
-nav{background-color: #DEDEDE;}
+
+/* navigation bar style */
+#left-side-bar ul{
+    height:550px;
+    list-style:none;
+    margin:0;
+    padding:0;
+    float:center;
+    text-align:center;
+    background-color: #DEDEDE;
+    }
+
+#left-side-bar ul li {
+    display:inline-block;
+    width:100%;
+    position:relative;
+    float:center;
+    background-color: #000d06;
+    }
+
+#left-side-bar ul li a {
+    display:inline-block;
+    line-height:50px;
+    padding:0;
+    color:#ffffff;
+    }
+
+#left-side-bar ul li li {float:center; color: #006633;  }
+    
+#left-side-bar ul li li a {display:block; font-size:12px;}
+    
+#left-side-bar ul li:hover {background:#003f20;}
+
+/* --- Sublist Styles --- */
+#left-side-bar ul ul{
+    position:absolute;
+    padding:0px;
+    left:0;
+    display:none;
+    width:100%;
+    }
+
+
+/* --- Sublevel UL's display and position on hover --- */
+#left-side-bar ul li:hover ul {display:block;} 
+#left-side-bar ul li li:hover ul {margin-left:200px; margin-top:-35px; display:block;}
+
+/* navigation bar style */
+
+
 h2{font-family: 'Playfair Display', serif;}
 .visualization {padding-top: 2%; height: 100vh; background-color: #FFF;}
 .filters {height: 100vh; background-color: #eee; padding-top: 2%; font-family: 'Playfair Display', serif;}
 .filters button {box-shadow: 5px 5px 5px #999;}
 .chartTypeCards {margin-top: 10%; font-family: 'Playfair Display', serif;}
 .chartTypeCards div {box-shadow: 5px 5px 5px #999;background-color: #fff; padding: 2% 5%; margin: 5% 10%;}
+.chart-section {padding: 0;}
+
+
 #chart {height:80%;}
 #chart .c3-legend-item {font-family: 'Raleway', sans-serif;}
 #filter-dropdown {}
